@@ -1,6 +1,7 @@
-* Last name:
-* First name:
-* Github username:
+* Last name:Leite
+* First name:Eduardo
+* Github username:work-ethics-Leiteduardo
+
 
 * Instructions:
 
