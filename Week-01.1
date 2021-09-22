@@ -1,0 +1,57 @@
+#This code will ask for three sides of a shape and it will see if the shape is a triangle or not. 
+print("We will be asking you for lengths of a shape.")
+print("Then we will see if it is a triangle or not.")
+print("Input lengths of the triangle sides.")
+x = int(input("Side 1: "))
+y = int(input("Side 2: "))
+z = int(input("Side 3: "))
+if x == y == z:
+  print("These numbers make up a equilateral triangle")
+elif x==y or y==z or z==x:
+  print("These numbers make up a isosceles triangle")
+elif x==90 or y==90 or z==90:
+  print("These numbers make up a right triangle")
+else:
+  print("These numbers make up a scalene triangle") 
+print("and the perimiter of this triangle is:")
+print(x + y + z)
+
+import turtle
+t = turtle.Turtle()
+
+if x == y == z:
+ t.forward(90)
+ t.left(120)
+
+ t.forward(90)
+ t.left(120)
+
+ t.forward(90)
+ t.left(120)
+elif x==y or y==z or z==x:
+ t.forward(60)
+ t.left(110)
+
+ t.forward(90)
+ t.left(140)
+
+ t.forward(90)
+ t.left(120) 
+elif x==90 or y==90 or z==90:
+ t.forward(80)
+ t.left(130)
+
+ t.forward(130)
+ t.left(142)
+
+ t.forward(100)
+ t.left(120)
+else:
+ t.forward(60)
+ t.left(140)
+
+ t.forward(100)
+ t.left(145)
+
+ t.forward(68)
+ t.left(120)
