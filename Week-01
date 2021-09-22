@@ -1,0 +1,102 @@
+#Import the necessary Python libraries.
+import turtle
+import time
+import math 
+t = turtle.Turtle()
+#2- Create a list containing 3 geometric shapes.
+shape = ['circle', 'octagon', 'square']
+#Print the list so that he user may see the items as they are asked to pick one.
+print()
+for z in shape:
+  print(z)
+print()
+#Create one function that draws the circle:
+def drawcircle():
+  #Define the variables that will be used to draw the circle:
+  r = input("What is the radius of the circle? ")
+  r = int(r)
+  t.circle(r)
+  ##After the circle is drawn, calculate the its area and its circumference: define the variables area and circunference:
+  area = float(math.pi) * (math.pow(r,2))
+  cir = float(2*math.pi*r)
+  #Print the area and the circumference of the circle:
+  print('The area of the circle is', area)
+  print('The circumference of the circle is', cir)
+
+#Create a function that draws the octagon:
+def drawoctagon():
+  #Define the variales that will be used to draw the octagon:
+  s = input("What is the length of the sides of the octagon? ")
+  s = int(s)
+  z = 0
+  while z < 8:
+    t.forward(s)
+    t.right(45)
+    z = z + 1
+  #After the octagon is drawn, calculate its perimeter:
+  perimeter = s * 8
+  #Print the perimeter of the octagon:
+  print('The perimeter of the octagon is', perimeter)  
+
+#Create a function that draws the square:
+def drawsquare():
+  #Define the variables that will be used to draw the square:
+  u = input('What is the length of the sides of the square? ')
+  u = int(u)
+  y = 0
+  while y < 4:
+    t.forward(u)
+    t.right(90)
+    y = y + 1
+  #After the square is drawn, calculate its perimeter:
+  perimeter_sq = 4 * u
+  #Print the perimeter the square:
+  print('The perimeter of the square is', perimeter_sq )
+#The user is given a choice of which shape they wish to draw"
+shape_1 = input('What shape would you like to draw? Please, use lower case ')
+#If the answer is circle, the code perform lines 14-24:
+if shape_1 == 'circle':
+  drawcircle()
+#If the octagon is picked, the code will perform lines 27-39:
+if shape_1 == 'octagon':
+  drawoctagon()
+#If the square is picked, the code will perform lines 42-55. 
+if shape_1 == 'square':
+  drawsquare()
+#Three seconds are alloted to the user to see the shape that they picked in the console before it disapears:
+time.sleep(3)
+t.clear()
+
+#Bonus colors of inclusion: 
+t.pu()
+t.goto(-50, 0)
+t.ht()
+t.color('dark orange')
+t.begin_fill()
+t.pd()
+t.circle(20)
+t.end_fill()
+
+t.pu()
+t.goto(0, 0)
+t.color('green')
+t.begin_fill()
+t.pd()
+y  = 0
+while y < 4:
+  t.forward(40)
+  t.left(90)
+  y = y + 1
+t.end_fill()
+
+t.pu()
+t.goto(90, 0)
+t.color('purple')
+t.begin_fill()
+t.pd()
+z = 0
+while z < 8:
+  t.forward(17)
+  t.left(45)
+  z= z + 1
+t.end_fill()
