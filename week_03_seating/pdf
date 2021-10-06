@@ -1,4 +1,11 @@
-###Seating algorithm- a more equitable appraoch
+###Seating algorithm- a more equitable approach
+### A more equitable algorithm for seating families in an airplane using Python.
+###Introduction- 
+#####We all know that airlines are in a very competitive business, with narrow profit margins, and a drive to survive that at times would push the bounds 
+#####of propriety and ethics. Charging extra for premium seats and group seating is common as they try to maximize returns. A family may have to pay extra to sit together as would those who value aisle and window seats above those middle seats in which you find yourself sandwiched between other passengers. We all know how stressful traveling by plane can be, so at times we may be caught off guard as the airlines charge higher fees for things that we take for granted.
+###Task- 
+####How to create a seating algorithm that would favor the welfare of all passengers, especially families. 
+###A more equitable algorithm for seating families in an airplane using Python.
 
 ##### The original seating arrangement benefits the airlines because it puts a premium on window seats. When passengers try to find available seats,
 they are allocated those seats first. In the case when a family tries to sit together, the first seat will be the premiun seat and then the continguous seats will 
