@@ -20,3 +20,5 @@ be allocated. This penalises families, especially those with children since pare
 ##### whereas in dicitionaries each position in index is connected to a key. So you can stipulate that a tuple is connected to a key.
 ##### In our case, the tuple would be the 2 family seats, which can only be assigned to the key, the window seat.
 
+
+
