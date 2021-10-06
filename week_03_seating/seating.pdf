@@ -1,1 +1,21 @@
+###Seating algorithm- a more equitable appraoch
 
+##### The original seating arrangement benefits the airlines because it puts a premium on window seats. When passengers try to find available seats,
+they are allocated those seats first. In the case when a family tries to sit together, the first seat will be the premiun seat and then the continguous seats will 
+be allocated. This penalises families, especially those with children since parents would not want to sit away from their children, nor spouses would wantto be split. 
+
+###A possible solution
+##### A new code would have the plane as a list of lists
+##### Each seat represented by a specific indexed row and column
+##### To find available seats the code would recursivelly search all seats without regard for their location
+##### Once an available seat is located, the code would check its neighbor and add it to the first one if its available
+##### Then it would check the next seat and also add it if it were available
+##### In order to seat a family of 3 the code would simply search for 3 availble seats together in each row
+##### So the code would recursivelly check each seat to ascertain that the contiguous 2 were also available
+##### The recursion routine would simply check if available seats, s >= 3  
+##### If yes, allocate the seats and deduct those seats from the list of available seats
+##### If s < 3, the code would move to the next row until it finds all 3 seats together
+
+##### I think that using lists instead of dictionaries makes a difference because in a list you are free to pick elements from the index 
+##### whereas in dicitionaries each position in index is connected to a key. So you can stipulate that a tuple is connected to a key.
+##### In our case, the tuple would be the 2 family seats, which can only be assigned to the key, the window seat.
