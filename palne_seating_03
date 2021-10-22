@@ -1,0 +1,49 @@
+#This is a collaboration with Mamudu. I tried to simplyfy the code by cutting back on the number of seats, but it it turned out not to be the optimal soution.
+#The program looks for 3 seats anywhere that they may be available. I ended up with a bug somewhere, but I can't find it.
+
+#Printing the booking of the seats.
+print("\n\nTicket Booking System\n")
+restart = ('Y')
+
+#This section of the code will identify empty seats and locacte the ones that could be filled.
+
+while restart != ('N','NO','n','no'):
+	print("1.Check PNR status")
+	print("2.Ticket Reservation")
+	option = int(input("\nEnter your option : "))
+
+#In order to find a seat you will need to also find 2 adjacent seats.
+	if option == 1:
+		print("Your PNR status is t3")
+		exit(0)
+    
+ #If you can find 3 seats together, then the program will assign those seats to you.
+ #You may also tell the program to find those sets that you want. Then the program will search for empty seats and add the empty seats to yor search.
+	
+  elif option == 2:
+		people = int(input("\nEnter no. of Ticket you want : "))
+		name_l = &#91;]
+		age_l = &#91;]
+		sex_l = &#91;]
+		for p in range(people):
+			name = str(input("\nName : "))
+			name_l.append(name)
+			age  = int(input("\nAge  : "))
+			age_l.append(age)
+			sex  = str(input("\nMale or Female : "))
+			sex_l.append(sex)
+      
+    #Did you get all the seats that you need or do yo still need to add to your purchase and seat assignements.
+
+		restart = str(input("\nDid you forgot someone? y/n: "))
+		if restart in ('y','YES','yes','Yes'):
+			restart = ('Y')
+		else :
+			x = 0
+			print("\nTotal Ticket : ",people)
+			for p in range(1,people+1):
+				print("Ticket : ",p)
+				print("Name : ", name_l&#91;x])
+				print("Age  : ", age_l&#91;x])
+				print("Sex : ",sex_l&#91;x])
+				x += 1
