@@ -1,5 +1,5 @@
 
-#This will search for the name of famous soccer players
+#This will search for the names of famous soccer players
 import re
 
 def find_name(line):
